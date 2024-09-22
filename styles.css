@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'],
+[type='image'],
+[type='checkbox'],
+[type='radio'],
+summary {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+}
+
+body {
+    background-color: #a6c8e8;
+    color: #222;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #252f3f;
+    color: beige;
+    padding: 1.3rem;
+}
+
+ul.navigation {
+    list-style: none;
+}
+
+main {
+    padding-inline-start: 1rem;
+}
+
+h1 {
+    padding: 2rem;
+    text-align: center;
+}
