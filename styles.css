@@ -20,26 +20,47 @@ summary {
 }
 
 html {
-    --clr-brand-circle-stroke: #444;
+    /* Colors */
+    --clr-brand-fire-dark: darkgoldenrod;
+    --clr-brand-water: #ddeefd;
+    --clr-background: whitesmoke;
+    --clr-ariana: #333;
+    --clr-brand-circle-stroke: var(--clr-ariana);
+    --clr-ariana-background: var(--clr-brand-water);
+    --clr-h-rule-ariana: var(--clr-ariana);
+    /* Sizes */
     --size-brand-circle-radius: 2rem;
     --size-brand-circle-stroke: 1.5px;
+    --size-h-rule-ariana: 1px;
+    --size-h-rule-footer: 0.5px;
 }
 
 a {
     text-decoration: none;
 }
+
 a:visited {
     color: inherit;
 }
+
 a:hover {
     color: inherit;
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: var(--clr-background);
     color: #222;
     font-family: Avenir, Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--clr-background);
 }
 
 nav > * {
@@ -52,8 +73,7 @@ nav > * {
     border-style: solid;
     border-width: var(--size-brand-circle-stroke);
     border-color: var(--clr-brand-circle-stroke);
-    background-color: orange;
-    background: linear-gradient(25deg, blue, #004eaf, #dc9a00, #ffff25, white);
+    background-color: var(--clr-brand-fire-dark);
     border-radius: 100%;
 }
 
@@ -65,12 +85,15 @@ nav > * {
     gap: 0.5rem;
 }
 
-.breadcrumbs-container {
-    background-color: #ddeefd;
+.ariana-container {
+    color: var(--clr-ariana);
+    background-color: var(--clr-ariana-background);
     padding-inline: 1.3rem;
     padding-block: 0.5rem;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-color: var(--clr-h-rule-ariana);
+    border-style: solid;
+    border-top-width: var(--size-h-rule-ariana);
+    border-bottom-width: var(--size-h-rule-ariana);
     font-size: small;
     font-weight: bold;
 }
@@ -83,13 +106,22 @@ ul.navigation {
 
 main {
     padding-inline-start: 1rem;
-    min-height: 80vh;
-    background-color: whitesmoke;
+    min-height: 50vh;
+    background-color: var(--clr-background);
+    text-align: justify;
+    max-width: 700px;
+    margin-inline: auto;
+    margin-block: 2rem;
+    margin-top: 4.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #444;
+    padding: 2rem;
 }
 
 main > header {
     padding: 2rem;
 }
+
 h1 {
     text-align: center;
 }
@@ -99,15 +131,29 @@ h2 {
     text-align: center;
     color: #777;
     font-size: 1.5rem;
+    font-weight: lighter;
 }
 
 .subhead-emphasis {
     font-family: serif;
     font-style: italic;
+    font-size: 1.6rem;
+}
+
+.construction {
+    text-align: center;
+    font-size: medium;
+    font-family: Avenir, sans-serif;
 }
 footer {
+    font-size: medium;
     text-align: center;
     border-top: 0.5px solid black;
     padding-block: 1rem;
     color: #3f3f3f;
+}
+
+.footer-sep {
+    color: var(--clr-brand-fire-dark);
+    padding-inline: 0.6rem;
 }
