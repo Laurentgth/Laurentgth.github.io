@@ -5,6 +5,7 @@
     border-spacing: 0;
     outline: 0;
     box-sizing: border-box;
+    font-weight: normal;
 }
 
 button,
@@ -18,6 +19,12 @@ summary {
     cursor: pointer;
 }
 
+html {
+    --clr-brand-circle-stroke: #444;
+    --size-brand-circle-radius: 2rem;
+    --size-brand-circle-stroke: 1.5px;
+}
+
 a {
     text-decoration: none;
 }
@@ -29,28 +36,78 @@ a:hover {
 }
 
 body {
-    background-color: #a6c8e8;
+    background-color: whitesmoke;
     color: #222;
-    font-family: Helvetica, sans-serif;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+
+nav > * {
+    padding-block: 1.3rem;
+}
+
+.logo-circle {
+    width: var(--size-brand-circle-radius);
+    height: var(--size-brand-circle-radius);
+    border-style: solid;
+    border-width: var(--size-brand-circle-stroke);
+    border-color: var(--clr-brand-circle-stroke);
+    background-color: orange;
+    background: linear-gradient(25deg, blue, #004eaf, #dc9a00, #ffff25, white);
+    border-radius: 100%;
+}
+
+.brand > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.breadcrumbs-container {
+    background-color: #ddeefd;
+    padding-inline: 1.3rem;
+    padding-block: 0.5rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: small;
     font-weight: bold;
 }
 
-nav {
-    background-color: #252f3f;
-    color: beige;
-    padding: 1.3rem;
-}
-
 ul.navigation {
+    display: flex;
+    padding-inline: 1.3rem;
     list-style: none;
 }
 
 main {
     padding-inline-start: 1rem;
+    min-height: 80vh;
+    background-color: whitesmoke;
 }
 
-h1 {
+main > header {
     padding: 2rem;
+}
+h1 {
     text-align: center;
+}
+
+h2 {
+    padding: 0.5rem;
+    text-align: center;
+    color: #777;
+    font-size: 1.5rem;
+}
+
+.subhead-emphasis {
+    font-family: serif;
+    font-style: italic;
+}
+footer {
+    text-align: center;
+    border-top: 0.5px solid black;
+    padding-block: 1rem;
+    color: #3f3f3f;
 }
