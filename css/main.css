@@ -188,6 +188,12 @@ body {
   padding-block: 1rem;
 }
 
-.footer__separator {
+.footer__year {
+  display: none;
+}
+
+.footer__year::before {
+  color: var(--clr-brand-fire-darker);
+  content: '•';
   padding-inline: 0.4rem;
 }
