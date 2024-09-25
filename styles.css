@@ -26,6 +26,8 @@ html {
   --clr-brand-fire-darker: #89640a;
   --clr-brand-water: #ddeefd;
   --clr-body-backg: whitesmoke;
+  --clr-infobox-backg: #ffff0033;
+  --clr-infobox-border: #dd6;
 
   /* Element Colors*/
   --clr-brand-circle-stroke: #333;
@@ -61,17 +63,13 @@ body {
   background-color: var(--clr-body-backg);
 }
 
-nav {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   width: 100%;
   background-color: var(--clr-body-backg);
-}
-
-nav > * {
-  padding-block: 1.3rem;
 }
 
 .logo-circle {
@@ -92,26 +90,33 @@ nav > * {
   gap: 0.5rem;
 }
 
-.ariana-container {
-  font-size: small;
-  font-weight: bold;
-  color: var(--clr-ariana);
-  background-color: var(--clr-ariana-backg);
+.navbar__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   padding-inline: 1.3rem;
-  padding-block: 0.5rem;
+  padding-block: 1.3rem;
+  list-style: none;
+}
+
+.ariana {
+  font-size: small;
+  color: var(--clr-ariana);
+  padding-block: 0;
+  background-color: var(--clr-ariana-backg);
   border-color: var(--clr-h-rule-ariana);
   border-style: solid;
   border-top-width: var(--size-h-rule-ariana);
   border-bottom-width: var(--size-h-rule-ariana);
 }
 
-ul.navigation {
-  display: flex;
+.ariana__item {
+  font-weight: bold;
+  padding-block: 0.5rem;
   padding-inline: 1.3rem;
-  list-style: none;
 }
 
-main {
+.main {
   font-family: 'Times New Roman', Times, serif;
   text-align: justify;
   color: #444;
@@ -123,15 +128,17 @@ main {
   margin-inline: auto;
 }
 
-main > header {
+.main-header {
   padding: 2rem;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
-h1 {
+.main-header__h1 {
+  font-size: 2.2rem;
   text-align: center;
 }
 
-h2 {
+.main-header__h2 {
   padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: lighter;
@@ -139,19 +146,29 @@ h2 {
   color: #777;
 }
 
-.subhead-emphasis {
-  font-family: serif;
-  font-size: 1.3rem;
-  font-style: italic;
+.infobox {
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--clr-infobox-border);
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  text-align: left;
+  background-color: var(--clr-infobox-backg);
+  border-radius: 0.5rem;
 }
 
-.construction {
-  font-family: Avenir, sans-serif;
+.infobox__title {
   font-size: medium;
-  text-align: center;
+  text-align: left;
+  opacity: 0.6;
 }
 
-.padding-main {
+.infobox__content {
+  font-size: medium;
+  text-align: left;
+}
+
+/* Utilities */
+.util-pad-main {
   padding-inline: 1.3rem;
 }
 
@@ -163,7 +180,7 @@ h2 {
   color: var(--clr-brand-fire-darker);
 }
 
-footer {
+.footer {
   font-size: medium;
   text-align: center;
   color: #3f3f3f;
@@ -171,6 +188,6 @@ footer {
   padding-block: 1rem;
 }
 
-.footer-sep {
+.footer__separator {
   padding-inline: 0.4rem;
 }
