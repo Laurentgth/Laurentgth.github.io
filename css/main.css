@@ -72,7 +72,7 @@ body {
   background-color: var(--clr-body-backg);
 }
 
-.logo-circle {
+.logo {
   width: var(--size-brand-circle-radius);
   height: var(--size-brand-circle-radius);
   border-style: solid;
