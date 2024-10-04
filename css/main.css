@@ -164,9 +164,11 @@ body {
 }
 
 .infobox__time {
+  display: inline-block;
   font-size: medium;
   text-align: left;
   opacity: 0.6;
+  padding-block-end: 0.5rem;
 }
 
 .infobox__content {
