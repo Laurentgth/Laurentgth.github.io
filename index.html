@@ -13,45 +13,151 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans"
     />
-    <script defer src="js/main.js"></script>
-    <title>
-      Laurentght | Développer sa pratique logicielle avec responsabilité
-    </title>
+    <link rel="icon" type="image/svg+xml" href="img/fav.png" />
+    <script type="module" defer src="js/main.js"></script>
+    <title>Laurentght | Pratique logicielle et responsabilité</title>
   </head>
-  <body>
-    <header>
+  <body id="home">
+    <header class="top-header">
       <nav class="navbar">
         <ul class="navbar__list">
           <li class="brand">
             <a href="/">
-              <div class="logo"></div>
-              <div>
-                Laurentg<span class="clr-brand-fire-darker">th</span>.fr
+              <div class="brand__logo-container">
+                <img
+                  class="brand__logo"
+                  src="img/logo.png"
+                  alt="Logo de l'entreprise Laurentgth"
+                />
+              </div>
+              <div class="brand__name-container">
+                Laurentg<span class="clr-brand-fire-darker">th</span>
               </div>
             </a>
           </li>
+          <li><a href="#home" aria-current="page">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#solutions">Solutions</a></li>
         </ul>
         <div class="ariana">
-          <div class="ariana__item">Accueil</div>
+          <div class="ariana__item"><a href="/">Accueil</a></div>
         </div>
       </nav>
     </header>
-    <main class="main util-pad-main">
-      <header class="main-header">
-        <h1 class="main-header__h1">Laurentg Technical Hub</h1>
-        <h2 class="main-header__h2">
-          <p>Développer sa pratique logicielle</p>
-          <p>avec responsabilité</p>
-        </h2>
-      </header>
-      <div class="infobox">
-        <time datetime="2024-09-25" class="infobox__time">
-          25 septembre 2024
-        </time>
-        <p class="infobox__content">Le site est en cours de développement.</p>
-        <p class="infobox__content">À très bientôt !</p>
-      </div>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__title">
+          <h1>Laurentg Technical Hub</h1>
+          <h2>
+            <p>Pratique logicielle et responsabilité</p>
+          </h2>
+        </div>
+        <div class="hero__card-container">
+          <div class="hero__card">
+            <div class="hero__card__wrapper">
+              <h3>Besoins de formation sur les choix et usages logiciels ?</h3>
+              <p>
+                L'offre logicielle étant aujourd'hui immense, il n'est pas
+                possible de tout connaître, ce n'est pas même souhaitable. Ce
+                qui est plus utile est d'apprendre à naviguer dans ce contexte
+                aux contours constamment changeants.
+              </p>
+            </div>
+          </div>
+          <div class="hero__card">
+            <div class="hero__card__wrapper">
+              <h3>L'IA vous intrigue ?</h3>
+              <p>
+                Les grands modèles de langage ou <i lang="en">LLM</i> répandent
+                leurs productions, comment se positionner dans ce monde
+                numérique en mouvement rapide ?
+              </p>
+            </div>
+          </div>
+          <div class="hero__card">
+            <div class="hero__card__wrapper">
+              <h3>C'est quoi la responsabilité numérique ?</h3>
+              <p>
+                Vos clients, et la société en général, sont de plus en plus
+                conscients des enjeux autour des technologiques de l'information
+                - quelle image je choisis de leur présenter ?
+              </p>
+            </div>
+          </div>
+          <div class="hero__card">
+            <div class="hero__card__wrapper">
+              <h3>Comment choisir mes outils numériques ?</h3>
+              <p>
+                Les solutions numériques se multiplient, sur mobile, ordinateurs
+                de bureau ou dans le <i lang="en">cloud</i>. Il est difficile de
+                faire le choix parmi ces nombreuses options, notamment en termes
+                de sécurité pour vos data et celles de vos clients.
+              </p>
+            </div>
+          </div>
+          <div class="hero__card">
+            <div class="hero__card__wrapper">
+              <h3>
+                Je veux intégrer l'IA dans mon workflow, par où commencer ?
+              </h3>
+              <p>
+                L'IA promet d'augmenter drastiquement la productivité. Est-ce
+                pertinent pour votre activité ? Si oui, quels outils d'IA
+                seraient adaptés ?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-control">
+          <button class="slider-control__item" id="slider-control-1"></button>
+          <button class="slider-control__item" id="slider-control-2"></button>
+          <button class="slider-control__item" id="slider-control-3"></button>
+          <button class="slider-control__item" id="slider-control-4"></button>
+          <button class="slider-control__item" id="slider-control-5"></button>
+        </div>
+        <div class="cta-container">
+          <button class="cta">
+            <a href="#solutions">Découvrez nos solutions</a>
+          </button>
+        </div>
+      </section>
+
+      <nav class="nav-to-top">
+        <a href="#home">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.43 30.5">
+            <polygon
+              points="17.43 16.81 8.72 0 0 16.81 5.72 16.81 5.72 30.5 11.72 30.5 11.72 16.81 17.43 16.81"
+            />
+          </svg>
+        </a>
+      </nav>
+
+      <section class="section">
+        <div class="infobox">
+          <time datetime="2024-10-15" class="infobox__time">
+            15 octobre 2024
+          </time>
+          <p class="infobox__content">Le site est en cours de développement.</p>
+          <p class="infobox__content">À très bientôt !</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3 class="section__title" id="solutions">
+          <a href="#solutions">Solutions</a>
+        </h3>
+        <p class="section__content"></p>
+      </section>
+
+      <section class="section">
+        <h3 class="section__title" id="about">
+          <a href="#about">À propos</a>
+        </h3>
+        <p class="section__content"></p>
+      </section>
     </main>
+
     <footer class="footer util-pad-main">
       Laurent Gauthier, entrepreneur individuel
       <time class="footer__year"></time>
