@@ -22,8 +22,24 @@
   --clr-ariadne-backg: var(--clr-brand-water);
   --clr-h-rule-ariadne: var(--clr-ariadne);
   --clr-subhead: #6f6f6f;
+
+  /* Temp elements */
   --clr-temp-element-light: #ffedb7;
   --clr-temp-element-lighter: #fafafa;
+  --clr-temp-element-dark: #fdce40;
+  --clr-temp-element-darker: #b88e00;
+  --clr-temp-content-light: linear-gradient(
+    45deg,
+    var(--clr-temp-element-light),
+    var(--clr-temp-element-lighter),
+    var(--clr-temp-element-light)
+  );
+  --clr-temp-content-dark: linear-gradient(
+    45deg,
+    var(--clr-temp-element-dark),
+    var(--clr-temp-element-darker),
+    var(--clr-temp-element-dark)
+  );
 
   /* Sizes */
   --size-brand-circle-radius: 2rem;
@@ -210,6 +226,8 @@ a:hover {
   display: flex;
   padding-block: 1.5rem;
   background-image: url('../img/hero.webp');
+  background-image: var(--clr-temp-content-dark);
+  background-color: lightgrey;
   min-height: 80vh;
   flex-direction: column;
   align-items: center;
@@ -345,12 +363,9 @@ p.section__content {
 p.section__content {
   height: 30vh;
   background-color: var(--clr-temp-element);
-  background-image: linear-gradient(
-    45deg,
-    var(--clr-temp-element-light),
-    var(--clr-temp-element-lighter),
-    var(--clr-temp-element-light)
-  );
+  background-image: var(--clr-temp-content-light);
+  background-color: lightgrey;
+
   border-radius: 0.4rem;
 }
 
