@@ -18,9 +18,9 @@
   /* Element Colors*/
   --clr-brand-circle-stroke: #333;
   --clr-brand-circle-backg: var(--clr-brand-fire-light);
-  --clr-ariana: #333;
-  --clr-ariana-backg: var(--clr-brand-water);
-  --clr-h-rule-ariana: var(--clr-ariana);
+  --clr-ariadne: #333;
+  --clr-ariadne-backg: var(--clr-brand-water);
+  --clr-h-rule-ariadne: var(--clr-ariadne);
   --clr-subhead: #6f6f6f;
   --clr-temp-element-light: #ffedb7;
   --clr-temp-element-lighter: #fafafa;
@@ -28,7 +28,7 @@
   /* Sizes */
   --size-brand-circle-radius: 2rem;
   --size-brand-circle-stroke: 1.5px;
-  --size-h-rule-ariana: 1px;
+  --size-h-rule-ariadne: 1px;
   --size-h-rule-footer: 0.5px;
 
   /* Layouts */
@@ -109,7 +109,7 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   padding-inline: 1.3rem;
-  padding-block: 1.3rem;
+  padding-block: 0.5rem;
   list-style: none;
   gap: 1rem;
 }
@@ -159,27 +159,27 @@ a:hover {
   fill: beige;
 }
 
-/* ARIANA THREAD */
-.ariana {
+/* ARIADNE THREAD */
+.ariadne {
   font-size: small;
-  color: var(--clr-ariana);
+  color: var(--clr-ariadne);
   flex-grow: 1;
   padding-block: 0;
-  background-color: var(--clr-ariana-backg);
-  border-color: var(--clr-h-rule-ariana);
+  background-color: var(--clr-ariadne-backg);
+  border-color: var(--clr-h-rule-ariadne);
   border-style: solid;
-  border-top-width: var(--size-h-rule-ariana);
-  border-bottom-width: var(--size-h-rule-ariana);
+  border-top-width: var(--size-h-rule-ariadne);
+  border-bottom-width: var(--size-h-rule-ariadne);
 }
 
-.ariana a {
+.ariadne a {
   text-decoration: underline;
   text-decoration-thickness: 0.1rem;
   padding-bottom: 0.2rem;
   text-underline-offset: 0.2rem;
 }
 
-.ariana__item {
+.ariadne__item {
   font-weight: bold;
   padding-block: 0.5rem;
   padding-inline: 1.3rem;
