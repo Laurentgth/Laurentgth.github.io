@@ -100,10 +100,10 @@ a:hover {
 
 /* MAIN HEADER -- NAVBAR */
 .navbar {
+  display: flex;
   width: 100%;
   font-size: 1.1rem;
   background-color: var(--clr-body-backg);
-  display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -127,9 +127,9 @@ a:hover {
 
 /* MAIN HEADER -- NAVIGATION LIST */
 .navbar__list {
+  display: flex;
   margin-inline: 0.5rem;
   flex: 1;
-  display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-block: 0.5rem;
@@ -149,9 +149,9 @@ a:hover {
 
 /* MAIN HEADER -- ARIADNE THREAD */
 .ariadne {
-  flex: 1 0 100%;
   font-size: small;
   color: var(--clr-ariadne);
+  flex: 1 0 100%;
   flex-grow: 1;
   padding-block: 0;
   background-color: var(--clr-ariadne-backg);
@@ -171,7 +171,7 @@ a:hover {
 .ariadne__item {
   font-weight: bold;
   padding-block: 0.5rem;
-  padding-inline: 1.3rem;
+  padding-inline: 1rem;
 }
 
 /* NAVIGATION TO THE TOP WIDGET */
@@ -180,7 +180,7 @@ a:hover {
   right: 30px;
   bottom: 50px;
   display: flex;
-  border: 2px solid beige;
+  border: 2px solid var(--clr-brand-fire-darker);
   width: 40px;
   height: 40px;
   font-weight: bold;
@@ -193,7 +193,7 @@ a:hover {
 
 .nav-to-top svg {
   height: 1.5rem;
-  fill: beige;
+  fill: var(--clr-brand-fire-darker);
 }
 
 /* MAIN */
