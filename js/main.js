@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const setTopTags = () => {
   const hash = window.location.hash ?? '#home';
-  const topTagList = document.querySelectorAll('.navbar li:nth-of-type(n+2)');
+  const topTagList = document.querySelectorAll('.navbar__list li');
   topTagList.forEach((li) => {
     const anchor = li.querySelector('a');
     if (anchor.getAttribute('href') == hash)
