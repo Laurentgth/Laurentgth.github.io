@@ -1,0 +1,31 @@
+/* PAGE-WIDE RULESETS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: var(--font-default), sans-serif;
+  font-size: 20px;
+  color: #444;
+  background-color: var(--clr-body-backg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+
+[lang|='en'] {
+  font-style: italic;
+}
+
+.clr-brand-fire-darker {
+  color: var(--clr-brand-fire-darker);
+}

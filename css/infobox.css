@@ -1,0 +1,24 @@
+/* INFOBOX */
+.infobox {
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--clr-infobox-border);
+  font-family: var(--font-infobox), Helvetica, sans-serif;
+  line-height: 1.5;
+  text-align: left;
+  background-color: var(--clr-infobox-backg);
+  border-radius: 0.5rem;
+}
+
+.infobox__time {
+  display: inline-block;
+  font-size: medium;
+  text-align: left;
+  opacity: 0.6;
+  padding-block-end: 0.5rem;
+}
+
+.infobox__content {
+  font-size: medium;
+  text-align: left;
+}

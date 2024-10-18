@@ -1,0 +1,35 @@
+/* MAIN SECTIONS */
+.section {
+  max-width: 40rem;
+  margin-inline: auto;
+  margin-block: 1rem;
+  padding-inline: var(--padding-page-content);
+}
+
+.section__title {
+  margin-block: 0.5rem;
+}
+.section__title::after {
+  content: '#';
+  visibility: hidden;
+}
+.section__title:hover > a {
+  text-decoration: underline;
+}
+.section__title:hover::after {
+  visibility: visible;
+  text-decoration: double;
+}
+
+p.section__content {
+  line-height: 1.5;
+  padding-block-end: 1.5rem;
+}
+p.section__content {
+  height: 30vh;
+  background-color: var(--clr-temp-element);
+  background-image: var(--clr-temp-content-light);
+  background-color: lightgrey;
+
+  border-radius: 0.4rem;
+}

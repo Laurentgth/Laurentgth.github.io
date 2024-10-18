@@ -1,0 +1,21 @@
+/* NAVIGATION TO THE TOP WIDGET */
+.nav-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  display: flex;
+  border: 2px solid var(--clr-brand-fire-darker);
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: orange;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-to-top svg {
+  height: 1.5rem;
+  fill: var(--clr-brand-fire-darker);
+}

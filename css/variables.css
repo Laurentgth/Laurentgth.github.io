@@ -1,0 +1,52 @@
+/* PAGE-WIDE VARIABLES */
+:root {
+  /* Fonts */
+  --font-default: 'Open Sans';
+  --font-headers: 'Open Sans', Helvetica, sans-serif;
+  --font-contents: Georgia;
+  --font-infobox: Helvetica, sans-serif;
+
+  /* Main Colors */
+  --clr-brand-fire-light: #f9b841;
+  --clr-brand-fire-dark: darkgoldenrod;
+  --clr-brand-fire-darker: #89640a;
+  --clr-brand-water: #ddeefd;
+  --clr-body-backg: whitesmoke;
+  --clr-infobox-backg: #ffff0033;
+  --clr-infobox-border: #dd6;
+
+  /* Element Colors*/
+  --clr-brand-circle-stroke: #333;
+  --clr-brand-circle-backg: var(--clr-brand-fire-light);
+  --clr-ariadne: #333;
+  --clr-ariadne-backg: var(--clr-brand-water);
+  --clr-h-rule-ariadne: var(--clr-ariadne);
+  --clr-subhead: #6f6f6f;
+
+  /* Temp elements */
+  --clr-temp-element-light: #ffedb7;
+  --clr-temp-element-lighter: #fafafa;
+  --clr-temp-element-dark: #fdce40;
+  --clr-temp-element-darker: #b88e00;
+  --clr-temp-content-light: linear-gradient(
+    45deg,
+    var(--clr-temp-element-light),
+    var(--clr-temp-element-lighter),
+    var(--clr-temp-element-light)
+  );
+  --clr-temp-content-dark: linear-gradient(
+    45deg,
+    var(--clr-temp-element-dark),
+    var(--clr-temp-element-darker),
+    var(--clr-temp-element-dark)
+  );
+
+  /* Sizes */
+  --size-brand-circle-radius: 2rem;
+  --size-brand-circle-stroke: 1.5px;
+  --size-h-rule-ariadne: 1px;
+  --size-h-rule-footer: 0.5px;
+
+  /* Layouts */
+  --padding-page-content: 1.3rem;
+}

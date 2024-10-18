@@ -1,0 +1,75 @@
+/* HERO SECTION */
+.hero {
+  display: flex;
+  padding-block: 1.5rem;
+  background-image: url('../img/hero.webp');
+  background-image: var(--clr-temp-content-dark);
+  background-color: lightgrey;
+  min-height: 80vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero__title h1 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.hero__title h2 {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: #777;
+}
+
+.hero__card-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hero__card-container {
+  display: flex;
+  width: 500vw;
+  transition: transform 0.5s ease-in-out;
+  align-self: flex-start;
+  /* align-items: center; */
+}
+
+.hero__card {
+  width: 100%;
+}
+
+.hero__card__wrapper {
+  padding-inline: 2rem;
+  max-width: 50rem;
+  margin-inline: auto;
+  font-size: 1.1em;
+}
+
+.hero__card h3 {
+  font-family: var(--font-headers);
+  font-weight: bold;
+  margin-block: 1.4rem;
+}
+
+.slider-control {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.slider-control__item {
+  border: 1px solide black;
+  width: 3rem;
+  height: 0.5rem;
+  background-color: beige;
+}
+
+.slider-control__item__active {
+  background-color: red;
+}

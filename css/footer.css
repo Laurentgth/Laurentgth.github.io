@@ -1,0 +1,20 @@
+/* FOOTER */
+.footer {
+  font-size: medium;
+  text-align: center;
+  color: #3f3f3f;
+  border-top: 0.5px solid black;
+  padding-block: 1rem;
+  padding-inline: var(--padding-page-content);
+}
+
+.footer__year {
+  display: none;
+}
+
+.footer__year::before {
+  font-weight: bold;
+  color: var(--clr-brand-fire-darker);
+  content: '•';
+  padding-inline: 0.4rem;
+}
