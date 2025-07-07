@@ -15,7 +15,7 @@
     />
     <link rel="icon" type="image/svg+xml" href="img/fav.png" />
     <script type="module" defer src="js/main.js"></script>
-    <title>Laurentgth • Pratique logicielle et responsabilité</title>
+    <title>Laurentgth | Formation numérique et optimisation logicielle</title>
   </head>
   <body id="home">
     <header class="top-header">
@@ -30,11 +30,20 @@
             </div>
           </a>
         </div>
-        <ul class="navbar__list">
-          <li><a href="#home" aria-current="page">Accueil</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-        </ul>
+        <div class="navlist">
+          <input
+            type="checkbox"
+            name="navlist__checkbox"
+            id="navlist__checkbox"
+            class="navlist__checkbox"
+          />
+          <label for="navlist__checkbox" class="navlist__hamburger">☰</label>
+          <ul class="navlist__list">
+            <li><a href="#home" aria-current="page">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+          </ul>
+        </div>
         <div class="ariadne">
           <div class="ariadne__item"><a href="/">Accueil</a></div>
         </div>
@@ -46,72 +55,79 @@
         <div class="hero__title">
           <h1>Laurentg Technical Hub</h1>
           <h2>
-            <p>Pratique logicielle et responsabilité</p>
+            <p>Formation numérique et optimisation logicielle</p>
           </h2>
         </div>
-        <div class="hero__card-container">
-          <div class="hero__card">
-            <div class="hero__card__wrapper">
-              <h3>Besoins de formation sur les choix et usages logiciels ?</h3>
-              <p>
-                L'offre logicielle étant aujourd'hui immense, il n'est pas
-                possible de tout connaître, ce n'est pas même souhaitable. Ce
-                qui est plus utile est d'apprendre à naviguer dans ce contexte
-                aux contours constamment changeants.
-              </p>
+
+        <div class="hero__card-display">
+          <div class="hero__card-container">
+            <div class="hero__card">
+              <div class="hero__card__wrapper">
+                <h3>
+                  Besoins de formation sur les choix et usages logiciels ?
+                </h3>
+                <p>
+                  L'offre logicielle étant aujourd'hui immense, il n'est pas
+                  possible de tout connaître, ce n'est pas même souhaitable. Ce
+                  qui est plus utile est d'apprendre à naviguer dans ce contexte
+                  aux contours constamment changeants.
+                </p>
+              </div>
+            </div>
+            <div class="hero__card">
+              <div class="hero__card__wrapper">
+                <h3>L'IA vous intrigue ?</h3>
+                <p>
+                  Les grands modèles de langage ou
+                  <i lang="en">LLM</i> répandent leurs productions, comment se
+                  positionner dans ce monde numérique en mouvement rapide ?
+                </p>
+              </div>
+            </div>
+            <div class="hero__card">
+              <div class="hero__card__wrapper">
+                <h3>C'est quoi la responsabilité numérique ?</h3>
+                <p>
+                  Vos clients, et la société en général, sont de plus en plus
+                  conscients des enjeux autour des technologiques de
+                  l'information - quelle image je choisis de leur présenter ?
+                </p>
+              </div>
+            </div>
+            <div class="hero__card">
+              <div class="hero__card__wrapper">
+                <h3>Comment choisir mes outils numériques ?</h3>
+                <p>
+                  Les solutions numériques se multiplient, sur mobile,
+                  ordinateurs de bureau ou dans le <i lang="en">cloud</i>. Il
+                  est difficile de faire le choix parmi ces nombreuses options,
+                  notamment en termes de sécurité pour vos data et celles de vos
+                  clients.
+                </p>
+              </div>
+            </div>
+            <div class="hero__card">
+              <div class="hero__card__wrapper">
+                <h3>
+                  Je veux intégrer l'IA dans mon workflow, par où commencer ?
+                </h3>
+                <p>
+                  L'IA promet d'augmenter drastiquement la productivité. Est-ce
+                  pertinent pour votre activité ? Si oui, quels outils d'IA
+                  seraient adaptés ?
+                </p>
+              </div>
             </div>
           </div>
-          <div class="hero__card">
-            <div class="hero__card__wrapper">
-              <h3>L'IA vous intrigue ?</h3>
-              <p>
-                Les grands modèles de langage ou <i lang="en">LLM</i> répandent
-                leurs productions, comment se positionner dans ce monde
-                numérique en mouvement rapide ?
-              </p>
-            </div>
-          </div>
-          <div class="hero__card">
-            <div class="hero__card__wrapper">
-              <h3>C'est quoi la responsabilité numérique ?</h3>
-              <p>
-                Vos clients, et la société en général, sont de plus en plus
-                conscients des enjeux autour des technologiques de l'information
-                - quelle image je choisis de leur présenter ?
-              </p>
-            </div>
-          </div>
-          <div class="hero__card">
-            <div class="hero__card__wrapper">
-              <h3>Comment choisir mes outils numériques ?</h3>
-              <p>
-                Les solutions numériques se multiplient, sur mobile, ordinateurs
-                de bureau ou dans le <i lang="en">cloud</i>. Il est difficile de
-                faire le choix parmi ces nombreuses options, notamment en termes
-                de sécurité pour vos data et celles de vos clients.
-              </p>
-            </div>
-          </div>
-          <div class="hero__card">
-            <div class="hero__card__wrapper">
-              <h3>
-                Je veux intégrer l'IA dans mon workflow, par où commencer ?
-              </h3>
-              <p>
-                L'IA promet d'augmenter drastiquement la productivité. Est-ce
-                pertinent pour votre activité ? Si oui, quels outils d'IA
-                seraient adaptés ?
-              </p>
-            </div>
+          <div class="slider-control">
+            <button class="slider-control__item" id="slider-control-1"></button>
+            <button class="slider-control__item" id="slider-control-2"></button>
+            <button class="slider-control__item" id="slider-control-3"></button>
+            <button class="slider-control__item" id="slider-control-4"></button>
+            <button class="slider-control__item" id="slider-control-5"></button>
           </div>
         </div>
-        <div class="slider-control">
-          <button class="slider-control__item" id="slider-control-1"></button>
-          <button class="slider-control__item" id="slider-control-2"></button>
-          <button class="slider-control__item" id="slider-control-3"></button>
-          <button class="slider-control__item" id="slider-control-4"></button>
-          <button class="slider-control__item" id="slider-control-5"></button>
-        </div>
+
         <div class="cta-container">
           <button class="cta">
             <a href="#solutions">Découvrez nos solutions</a>

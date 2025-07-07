@@ -1,4 +1,4 @@
-const topTagList = document.querySelectorAll('.navbar__list li');
+const topTagList = document.querySelectorAll('.navlist li');
 
 const setTopTags = () => {
   const hash = window.location.hash ?? '#home';

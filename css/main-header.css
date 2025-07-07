@@ -13,6 +13,7 @@
   width: 100%;
   font-size: 1.1rem;
   background-color: var(--clr-body-backg);
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -34,18 +35,39 @@
   height: 50px;
 }
 
-/* MAIN HEADER -- HAMBURGER */
-.navbar__hamburger {
+/* MAIN HEADER -- NAVIGATION LIST - TOGGLE */
+.navlist {
   display: flex;
 }
 
-.navbar__hamburger svg {
+.navlist__checkbox {
+  display: none;
+}
+
+.navlist__checkbox:checked ~ .navlist__list {
+  display: flex;
+}
+
+.navlist__hamburger {
+  display: flex;
+  margin-inline: 0.5rem;
+  font-size: 2em;
+}
+
+.navlist__hamburger svg {
   width: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .navlist__hamburger {
+    display: none;
+  }
+}
+
 /* MAIN HEADER -- NAVIGATION LIST */
-.navbar__list {
-  display: flex;
+
+.navlist__list {
+  display: none;
   margin-inline: 0.5rem;
   flex: 1;
   justify-content: flex-end;
@@ -55,14 +77,20 @@
   gap: 1rem;
 }
 
-.navbar__list li {
+.navlist li {
   display: flex;
   align-items: center;
 }
 
-.navbar__list a[aria-current='page'] {
+.navlist a[aria-current='page'] {
   font-weight: bold;
   color: var(--clr-brand-fire-darker);
+}
+
+@media screen and (min-width: 768px) {
+  .navlist__list {
+    display: flex;
+  }
 }
 
 /* MAIN HEADER -- ARIADNE THREAD */
