@@ -3,7 +3,6 @@
   display: flex;
   padding-block: 1.5rem;
   background-image: url('../img/hero.webp');
-  background-image: var(--clr-temp-content-dark);
   background-color: lightgrey;
   min-height: 80vh;
   flex-direction: column;
@@ -64,7 +63,7 @@
 }
 
 .slider-control__item {
-  border: 1px solide black;
+  border: 1px solid black;
   width: 3rem;
   height: 0.5rem;
   background-color: beige;
